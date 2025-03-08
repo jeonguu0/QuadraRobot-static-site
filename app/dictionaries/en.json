@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "title": "Quadra Robot",
+    "description": "Quadra Robot is dedicated to creating non-humanoid robots that can do housework for under 30,000 RMB, proving that non-humanoid robots offer better value and are more popular than humanoid robots."
+  },
+  "nav": {
+    "vision": "Vision",
+    "design": "Design",
+    "team": "Team",
+    "contact": "Contact",
+    "joinUs": "Join Us"
+  },
+  "hero": {
+    "title": "Quadra Robot",
+    "subtitle": "Creating non-humanoid robots that can do housework for under 30,000 RMB."
+  },
+  "cta": {
+    "learnVision": "Learn Vision",
+    "productDesign": "Product Design"
+  },
+  "vision": {
+    "title": "Vision",
+    "subtitle": "Breaking Tradition, Innovating the Future",
+    "description": "We firmly believe that future robots should not be limited to simply replicating the human form.",
+    "philosophy": {
+      "title": "Our Philosophy",
+      "content1": "Organisms in nature have evolved over billions of years, developing astonishing diversity and adaptability. However, biological evolution has its inherent limitations. For example, organisms cannot evolve parts like wheels that can rotate continuously, which is determined by the physical and chemical properties of basic components such as biological cells, muscles, and bones.",
+      "content2": "The power source of organisms is complex biochemical reactions, which are fundamentally different from mechanical power devices such as electric motors. Therefore, simply imitating the form of humans or animals to design robots does not fully leverage the advantages of mechanical and electronic technology."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content1": "We believe that humanoid robots are too expensive, making them difficult to popularize in households. Moreover, household chores, cooking, laundry, and cleaning do not require a 'humanoid' form to complete, so there is no need to insist on a 'humanoid' design.",
+      "content2": "Quadra Robot is dedicated to creating non-humanoid robots that can do housework for under 30,000 RMB, proving that non-humanoid robots offer better value and are more popular than humanoid robots."
+    },
+    "name": {
+      "title": "The Meaning of Our Name",
+      "content": "Before human civilization, the quadrilateral shape was rare in nature. But after the emergence of human civilization, doors, windows, tables, chairs, cars, houses, etc., quadrilaterals are everywhere. Because it is the most practical and efficient shape, meeting various human needs at the lowest cost. And this is our philosophy: practical, low-cost, starting from household chores, gradually penetrating into various human labor scenarios, into various industries."
+    }
+  },
+  "design": {
+    "title": "Product Design",
+    "subtitle": "Wheel + Lifting Column + Dual Arm Solution",
+    "description": "Our non-humanoid household robot adopts an innovative design concept to meet actual household needs.",
+    "analysis": {
+      "title": "Needs Analysis",
+      "items": [
+        {
+          "title": "Footprint",
+          "description": "No larger than an adult's footprint, to adapt to smaller kitchens in urban areas."
+        },
+        {
+          "title": "Mobility",
+          "description": "Able to move forward, backward, sideways, and turn flexibly in small spaces."
+        },
+        {
+          "title": "Picking & Operating Range",
+          "description": "Can pick up items from the floor at the lowest and reach items in the top kitchen cabinets at the highest."
+        },
+        {
+          "title": "Strength",
+          "description": "Can carry everyday household items, such as chairs, water barrels, and pots full of beef soup."
+        },
+        {
+          "title": "Battery Life",
+          "description": "Must be able to work continuously for more than 3 hours on a single charge."
+        },
+        {
+          "title": "Remote Response & Proactive Contact",
+          "description": "Can respond to the owner's remote commands via WeChat, WhatsApp."
+        },
+        {
+          "title": "Safety Perception",
+          "description": "When people or objects approach nearby, the robot will modify its planned behavior to avoid collisions."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Design Solution",
+      "description": "Our design adopts a wheel + lifting column + dual arm solution, including the following core components:",
+      "items": [
+        {
+          "title": "Mecanum Wheels",
+          "description": "Provide omnidirectional mobility, allowing the robot to move flexibly in small spaces."
+        },
+        {
+          "title": "Telescopic Lifting Column",
+          "description": "Maximum height of about 1.5 meters, supporting the mechanical arm to reach the maximum height that an ordinary adult's arm can reach."
+        },
+        {
+          "title": "Mechanical Arm",
+          "description": "Length equivalent to an adult's arm, about 0.7 meters, can be equipped with dexterous hands."
+        },
+        {
+          "title": "Chassis",
+          "description": "All heavier components are placed in the chassis as much as possible to maintain stability."
+        }
+      ]
+    }
+  },
+  "team": {
+    "title": "Team Recruitment",
+    "subtitle": "Join Us, Change the Future",
+    "description": "We are a 'starting from scratch' entrepreneurial team, a group of young people, unconventional, with dreams, creativity, and funding.",
+    "workStyle": {
+      "title": "Our Work Style",
+      "items": [
+        {
+          "title": "Global Collaboration",
+          "description": "We reject traditional '9-to-5' or punch-in systems, no need for commuting, work from home allows you to work efficiently in a comfortable environment, team members are located around the world, communicating and collaborating efficiently through advanced online collaboration platforms, breaking geographical limitations."
+        },
+        {
+          "title": "Equity Incentives",
+          "description": "All employees are given shares while being paid. Your shares are proportional to your contribution."
+        },
+        {
+          "title": "Result-Oriented",
+          "description": "Focus on results, achieve goals, give high rewards. For example: if you complete 4 months of goals in 2 months, you still get the full reward."
+        }
+      ]
+    },
+    "positions": {
+      "title": "Open Positions",
+      "items": [
+        {
+          "title": "Robot Hardware Engineer",
+          "description": "Responsible for robot hardware design, assembly, and testing."
+        },
+        {
+          "title": "Embodied Intelligence Software Engineer",
+          "description": "Responsible for robot AI algorithm and intelligent interaction system development."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Looking Forward to Collaborating with You",
+    "description": "If you are interested in our project or have any questions, please feel free to contact us.",
+    "email": "QuadraRobot.cn@gmail.com",
+    "overseasAddress": "Overseas Company Address: Singapore",
+    "chinaAddress": "China Company Address: Hangzhou",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Please enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Please enter your email",
+      "position": "Position Applied",
+      "positionPlaceholder": "Please select a position",
+      "positions": {
+        "hardware": "Robot Hardware Engineer",
+        "software": "Embodied Intelligence Software Engineer",
+        "other": "Other Position"
+      },
+      "introduction": "Personal Introduction",
+      "introductionPlaceholder": "Please briefly introduce your skills and experience",
+      "submit": "Submit Application"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Quadra Robot. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  }
+}
+

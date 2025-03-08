@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "title": "Quadra Robot - 四边形机器人",
+    "description": "Quadra Robot致力于打造3万元人民币以内的会做家务的非人形机器人，用产品证明非人形机器人比人形机器人的性价比更高、更受欢迎。"
+  },
+  "nav": {
+    "vision": "公司愿景",
+    "design": "产品设计",
+    "team": "团队招募",
+    "contact": "联系我们",
+    "joinUs": "加入我们"
+  },
+  "hero": {
+    "title": "Quadra Robot\n四边形机器人",
+    "subtitle": "打造3万元人民币以内的会做家务的&quot;非人形&quot;机器人。"
+  },
+  "cta": {
+    "learnVision": "了解愿景",
+    "productDesign": "产品设计"
+  },
+  "vision": {
+    "title": "公司愿景",
+    "subtitle": "突破传统，创新未来",
+    "description": "我们坚信，未来的机器人不应局限于对&quot;人形&quot;的简单复刻",
+    "philosophy": {
+      "title": "我们的理念",
+      "content1": "自然界的生物经过亿万年的进化，演化出了令人惊叹的多样性和适应性。然而，生物的进化也存在其固有的局限性。例如，生物体不可能进化出像轮子这样可以连续旋转的部件，这是由生物细胞、肌肉和骨骼等基本组成单元的物理化学特性决定的。",
+      "content2": "生物的动力来源是复杂的生物化学反应，与电动机等机械动力装置的底层原理截然不同。因此，简单地模仿人类或动物的形态来设计机器人，并不能充分发挥机械和电子技术的优势。"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "content1": "我们认为人形机器人价格太高、过于昂贵，不利于进入家庭普及。且做家务、烧菜、洗衣、打扫清洁等事根本不需要&quot;人形&quot;就能完成，并非需要执着于&quot;人形&quot;。",
+      "content2": "Quadra Robot致力于打造3万元人民币以内的会做家务的&quot;非人形&quot;机器人，用产品证明：&quot;非人形&quot;机器人比&quot;人形&quot;机器人的性价比更高、更受欢迎。"
+    },
+    "name": {
+      "title": "名字的寓意",
+      "content": "在人类文明出现之前，四边形这个形状在大自然中极少。但在人类文明出现后，门、窗、桌子、椅子、汽车、房屋等等，到处都有四边形。因为它是最实用、最高效的形状，最低成本的满足人类的各种需求。而这正是我们的理念：实用、低价、从家庭家务开始，逐渐渗透到各种人类的劳动场景中，到各行各业中。"
+    }
+  },
+  "design": {
+    "title": "产品设计",
+    "subtitle": "轮式+升降柱+双臂方案",
+    "description": "我们的非人形家政机器人采用创新的设计理念，满足家庭实际需求",
+    "analysis": {
+      "title": "需求分析",
+      "items": [
+        {
+          "title": "占地面积",
+          "description": "不超过一个成年人的占地面积，以适应城市面积较小的厨房"
+        },
+        {
+          "title": "移动灵活",
+          "description": "能在狭小的空间内前进、后退、侧移、转向灵活"
+        },
+        {
+          "title": "拾取与操作范围",
+          "description": "最低可捡地上的东西，最高可拿取厨房顶部的柜子里的东西"
+        },
+        {
+          "title": "力量",
+          "description": "可以搬运日常家庭物品，如椅子、桶装水、装满牛肉汤的炖锅"
+        },
+        {
+          "title": "电池续航",
+          "description": "充一次电，必须能连续工作3小时以上"
+        },
+        {
+          "title": "远程响应与主动联系",
+          "description": "可通过微信、WhatsApp响应主人的远程命令"
+        },
+        {
+          "title": "安全感知",
+          "description": "当附近有人或物靠近时，机器人会修改原计划的行为，以避免碰撞"
+        }
+      ]
+    },
+    "solution": {
+      "title": "设计方案",
+      "description": "我们的设计采用轮式+升降柱+双臂方案，包括以下核心组件：",
+      "items": [
+        {
+          "title": "麦克纳姆轮",
+          "description": "提供全向移动能力，使机器人能够在狭小空间内灵活移动"
+        },
+        {
+          "title": "伸缩升降柱",
+          "description": "最大高度约1.5米，支撑机械臂达到普通成年人手臂能达到的最高高度"
+        },
+        {
+          "title": "机械臂",
+          "description": "长度与成年人手臂长度相当，约0.7米，可安装灵巧手"
+        },
+        {
+          "title": "底盘",
+          "description": "所有较重的部件都尽量置于底盘内，保持稳定性。"
+        }
+      ]
+    }
+  },
+  "team": {
+    "title": "团队招募",
+    "subtitle": "加入我们，改变未来",
+    "description": "我们是一个&quot;从零开始&quot;的创业团队，一群年轻人，不落俗套、有梦想、有创意、有资金",
+    "workStyle": {
+      "title": "我们的工作方式",
+      "items": [
+        {
+          "title": "全球协作",
+          "description": "我们拒绝传统的&quot;朝九晚五&quot;或打卡，无需通勤奔波，居家办公让你在舒适的环境中高效工作，团队成员遍布全球，通过先进的线上协作平台高效沟通与协作，打破地域限制。"
+        },
+        {
+          "title": "股权激励",
+          "description": "所有员工发薪水的同时赠送股份。你的股份与你的贡献呈正比。"
+        },
+        {
+          "title": "成果导向",
+          "description": "看重成果，实现目标，给高额奖励。比如：若2个月完成4个月的目标，仍给全额奖励。"
+        }
+      ]
+    },
+    "positions": {
+      "title": "招募职位",
+      "items": [
+        {
+          "title": "机器人硬件工程师",
+          "description": "负责机器人硬件设计、组装和测试"
+        },
+        {
+          "title": "具身智能软件工程师",
+          "description": "负责机器人AI算法和智能交互系统开发"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "期待与您合作",
+    "description": "如果您对我们的项目感兴趣，或有任何疑问，请随时联系我们",
+    "email": "QuadraRobot.cn@gmail.com",
+    "overseasAddress": "海外公司地址：新加坡",
+    "chinaAddress": "中国公司地址：杭州",
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "email": "邮箱",
+      "emailPlaceholder": "请输入您的邮箱",
+      "position": "应聘职位",
+      "positionPlaceholder": "请选择职位",
+      "positions": {
+        "hardware": "机器人硬件工程师",
+        "software": "具身智能软件工程师",
+        "other": "其他职位"
+      },
+      "introduction": "个人介绍",
+      "introductionPlaceholder": "请简要介绍您的技能和经验",
+      "submit": "提交申请"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Quadra Robot 四边形机器人. 保留所有权利.",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  }
+}
+
