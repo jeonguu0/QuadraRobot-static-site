@@ -232,10 +232,10 @@ const enDict = {
 }
 
 export default function HomePage() {
-  const [lang, setLang] = useState("zh")
-  const [dict, setDict] = useState(zhDict)
+  const [lang, setLang] = useState<"zh" | "en">("zh")
+  const [dict, setDict] = useState<typeof zhDict>(zhDict)
 
-  const toggleLanguage = (newLang) => {
+  const toggleLanguage = (newLang: "zh" | "en") => {
     setLang(newLang)
     setDict(newLang === "zh" ? zhDict : enDict)
     localStorage.setItem("preferredLanguage", newLang)
@@ -244,7 +244,7 @@ export default function HomePage() {
   useEffect(() => {
     const savedLang = localStorage.getItem("preferredLanguage")
     if (savedLang) {
-      setLang(savedLang)
+      setLang(savedLang as "zh" | "en")
       setDict(savedLang === "zh" ? zhDict : enDict)
     }
   }, [])
