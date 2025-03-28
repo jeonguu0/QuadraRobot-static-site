@@ -138,23 +138,7 @@
     "description": "If you are interested in our project or have any questions, please feel free to contact us.",
     "email": "QuadraRobot.cn@gmail.com",
     "overseasAddress": "Overseas Company Address: Singapore",
-    "chinaAddress": "China Company Address: Hangzhou",
-    "form": {
-      "name": "Name",
-      "namePlaceholder": "Please enter your name",
-      "email": "Email",
-      "emailPlaceholder": "Please enter your email",
-      "position": "Position Applied",
-      "positionPlaceholder": "Please select a position",
-      "positions": {
-        "hardware": "Robot Hardware Engineer",
-        "software": "Embodied Intelligence Software Engineer",
-        "other": "Other Position"
-      },
-      "introduction": "Personal Introduction",
-      "introductionPlaceholder": "Please briefly introduce your skills and experience",
-      "submit": "Submit Application"
-    }
+    "chinaAddress": "China Company Address: Hangzhou"
   },
   "footer": {
     "copyright": "© 2024 Quadra Robot. All rights reserved.",

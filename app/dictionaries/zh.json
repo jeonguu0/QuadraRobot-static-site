@@ -138,23 +138,7 @@
     "description": "如果您对我们的项目感兴趣，或有任何疑问，请随时联系我们",
     "email": "QuadraRobot.cn@gmail.com",
     "overseasAddress": "海外公司地址：新加坡",
-    "chinaAddress": "中国公司地址：杭州",
-    "form": {
-      "name": "姓名",
-      "namePlaceholder": "请输入您的姓名",
-      "email": "邮箱",
-      "emailPlaceholder": "请输入您的邮箱",
-      "position": "应聘职位",
-      "positionPlaceholder": "请选择职位",
-      "positions": {
-        "hardware": "机器人硬件工程师",
-        "software": "具身智能软件工程师",
-        "other": "其他职位"
-      },
-      "introduction": "个人介绍",
-      "introductionPlaceholder": "请简要介绍您的技能和经验",
-      "submit": "提交申请"
-    }
+    "chinaAddress": "中国公司地址：杭州"
   },
   "footer": {
     "copyright": "© 2024 Quadra Robot 四边形机器人. 保留所有权利.",

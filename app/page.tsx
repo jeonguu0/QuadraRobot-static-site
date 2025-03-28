@@ -1,8 +1,7 @@
 "use client"
 
 import React from "react"
-
-import { ChevronRight, Shield, Mail, MapPin, Wrench, Code, Briefcase, Globe, Award } from "lucide-react"
+import { ChevronRight, Mail, MapPin, Wrench, Code, Briefcase, Globe, Award } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
@@ -54,56 +53,23 @@ const zhDict = {
     analysis: {
       title: "需求分析",
       items: [
-        {
-          title: "占地面积",
-          description: "不超过一个成年人的占地面积，以适应城市面积较小的厨房",
-        },
-        {
-          title: "移动灵活",
-          description: "能在狭小的空间内前进、后退、侧移、转向灵活",
-        },
-        {
-          title: "拾取与操作范围",
-          description: "最低可捡地上的东西，最高可拿取厨房顶部的柜子里的东西",
-        },
-        {
-          title: "力量",
-          description: "可以搬运日常家庭物品，如椅子、桶装水、装满牛肉汤的炖锅",
-        },
-        {
-          title: "电池续航",
-          description: "充一次电，必须能连续工作3小时以上",
-        },
-        {
-          title: "远程响应与主动联系",
-          description: "可通过微信、WhatsApp响应主人的远程命令",
-        },
-        {
-          title: "安全感知",
-          description: "当附近有人或物靠近时，机器人会修改原计划的行为，以避免碰撞",
-        },
+        { title: "占地面积", description: "不超过一个成年人的占地面积，以适应城市面积较小的厨房" },
+        { title: "移动灵活", description: "能在狭小的空间内前进、后退、侧移、转向灵活" },
+        { title: "拾取与操作范围", description: "最低可捡地上的东西，最高可拿取厨房顶部的柜子里的东西" },
+        { title: "力量", description: "可以搬运日常家庭物品，如椅子、桶装水、装满牛肉汤的炖锅" },
+        { title: "电池续航", description: "充一次电，必须能连续工作3小时以上" },
+        { title: "远程响应与主动联系", description: "可通过微信、WhatsApp响应主人的远程命令" },
+        { title: "安全感知", description: "当附近有人或物靠近时，机器人会修改原计划的行为，以避免碰撞" },
       ],
     },
     solution: {
       title: "设计方案",
       description: "我们的设计采用轮式+升降柱+双臂方案，包括以下核心组件：",
       items: [
-        {
-          title: "麦克纳姆轮",
-          description: "提供全向移动能力，使机器人能够在狭小空间内灵活移动",
-        },
-        {
-          title: "伸缩升降柱",
-          description: "最大高度约1.5米，支撑机械臂达到普通成年人手臂能达到的最高高度",
-        },
-        {
-          title: "机械臂",
-          description: "长度与成年人手臂长度相当，约0.7米，可安装灵巧手",
-        },
-        {
-          title: "底盘",
-          description: "所有较重的部件都尽量置于底盘内，保持稳定性。",
-        },
+        { title: "麦克纳姆轮", description: "提供全向移动能力，使机器人能够在狭小空间内灵活移动" },
+        { title: "伸缩升降柱", description: "最大高度约1.5米，支撑机械臂达到普通成年人手臂能达到的最高高度" },
+        { title: "机械臂", description: "长度与成年人手臂长度相当，约0.7米，可安装灵巧手" },
+        { title: "底盘", description: "所有较重的部件都尽量置于底盘内，保持稳定性。" },
       ],
     },
   },
@@ -116,30 +82,17 @@ const zhDict = {
       items: [
         {
           title: "全球协作",
-          description:
-            "我们拒绝传统的朝九晚五或打卡，无需通勤奔波，居家办公让你在舒适的环境中高效工作，团队成员遍布全球，通过先进的线上协作平台高效沟通与协作，打破地域限制。",
+          description: "我们拒绝传统的朝九晚五或打卡，无需通勤奔波，居家办公让你在舒适的环境中高效工作，团队成员遍布全球，通过先进的线上协作平台高效沟通与协作，打破地域限制。",
         },
-        {
-          title: "股权激励",
-          description: "所有员工发薪水的同时赠送股份。你的股份与你的贡献呈正比。",
-        },
-        {
-          title: "成果导向",
-          description: "看重成果，实现目标，给高额奖励。比如：若2个月完成4个月的目标，仍给全额奖励。",
-        },
+        { title: "股权激励", description: "所有员工发薪水的同时赠送股份。你的股份与你的贡献呈正比。" },
+        { title: "成果导向", description: "看重成果，实现目标，给高额奖励。比如：若2个月完成4个月的目标，仍给全额奖励。" },
       ],
     },
     positions: {
       title: "招募职位",
       items: [
-        {
-          title: "机器人硬件工程师",
-          description: "负责机器人硬件设计、组装和测试",
-        },
-        {
-          title: "具身智能软件工程师",
-          description: "负责机器人AI算法和智能交互系统开发",
-        },
+        { title: "机器人硬件工程师", description: "负责机器人硬件设计、组装和测试" },
+        { title: "具身智能软件工程师", description: "负责机器人AI算法和智能交互系统开发" },
       ],
     },
   },
@@ -151,21 +104,8 @@ const zhDict = {
     overseasAddress: "海外公司地址：新加坡",
     chinaAddress: "中国公司地址：杭州",
     form: {
-      name: "姓名",
-      namePlaceholder: "请输入您的姓名",
-      email: "邮箱",
-      emailPlaceholder: "请输入您的邮箱",
-      position: "应聘职位",
-      positionPlaceholder: "请选择职位",
-      positions: {
-        hardware: "机器人硬件工程师",
-        software: "具身智能软件工程师",
-        other: "其他职位",
-      },
-      introduction: "个人介绍",
-      introductionPlaceholder: "请简要介绍您的技能和经验",
-      submit: "提交申请",
-    },
+      introductionPlaceholder: "请简要介绍您的技能和经验"
+    }
   },
   footer: {
     copyright: "© 2024 Quadra Robot 四边形机器人. 保留所有权利.",
@@ -226,99 +166,46 @@ const enDict = {
     analysis: {
       title: "Needs Analysis",
       items: [
-        {
-          title: "Footprint",
-          description: "No larger than an adult's footprint, to adapt to smaller kitchens in urban areas.",
-        },
-        {
-          title: "Mobility",
-          description: "Able to move forward, backward, sideways, and turn flexibly in small spaces.",
-        },
-        {
-          title: "Picking & Operating Range",
-          description:
-            "Can pick up items from the floor at the lowest and reach items in the top kitchen cabinets at the highest.",
-        },
-        {
-          title: "Strength",
-          description: "Can carry everyday household items, such as chairs, water barrels, and pots full of beef soup.",
-        },
-        {
-          title: "Battery Life",
-          description: "Must be able to work continuously for more than 3 hours on a single charge.",
-        },
-        {
-          title: "Remote Response & Proactive Contact",
-          description: "Can respond to the owner's remote commands via WeChat, WhatsApp.",
-        },
-        {
-          title: "Safety Perception",
-          description:
-            "When people or objects approach nearby, the robot will modify its planned behavior to avoid collisions.",
-        },
+        { title: "Footprint", description: "No larger than an adult's footprint, to adapt to smaller kitchens in urban areas." },
+        { title: "Mobility", description: "Able to move forward, backward, sideways, and turn flexibly in small spaces." },
+        { title: "Picking & Operating Range", description: "Can pick up items from the floor at the lowest and reach items in the top kitchen cabinets at the highest." },
+        { title: "Strength", description: "Can carry everyday household items, such as chairs, water barrels, and pots full of beef soup." },
+        { title: "Battery Life", description: "Must be able to work continuously for more than 3 hours on a single charge." },
+        { title: "Remote Response & Proactive Contact", description: "Can respond to the owner's remote commands via WeChat, WhatsApp." },
+        { title: "Safety Perception", description: "When people or objects approach nearby, the robot will modify its planned behavior to avoid collisions." },
       ],
     },
     solution: {
       title: "Design Solution",
-      description:
-        "Our design adopts a wheel + lifting column + dual arm solution, including the following core components:",
+      description: "Our design adopts a wheel + lifting column + dual arm solution, including the following core components:",
       items: [
-        {
-          title: "Mecanum Wheels",
-          description: "Provide omnidirectional mobility, allowing the robot to move flexibly in small spaces.",
-        },
-        {
-          title: "Telescopic Lifting Column",
-          description:
-            "Maximum height of about 1.5 meters, supporting the mechanical arm to reach the maximum height that an ordinary adult's arm can reach.",
-        },
-        {
-          title: "Mechanical Arm",
-          description: "Length equivalent to an adult's arm, about 0.7 meters, can be equipped with dexterous hands.",
-        },
-        {
-          title: "Chassis",
-          description: "All heavier components are placed in the chassis as much as possible to maintain stability.",
-        },
+        { title: "Mecanum Wheels", description: "Provide omnidirectional mobility, allowing the robot to move flexibly in small spaces." },
+        { title: "Telescopic Lifting Column", description: "Maximum height of about 1.5 meters, supporting the mechanical arm to reach the maximum height that an ordinary adult's arm can reach." },
+        { title: "Mechanical Arm", description: "Length equivalent to an adult's arm, about 0.7 meters, can be equipped with dexterous hands." },
+        { title: "Chassis", description: "All heavier components are placed in the chassis as much as possible to maintain stability." },
       ],
     },
   },
   team: {
     title: "Team Recruitment",
     subtitle: "Join Us, Change the Future",
-    description:
-      "We are a 'starting from scratch' entrepreneurial team, a group of young people, unconventional, with dreams, creativity, and funding.",
+    description: "We are a 'starting from scratch' entrepreneurial team, a group of young people, unconventional, with dreams, creativity, and funding.",
     workStyle: {
       title: "Our Work Style",
       items: [
         {
           title: "Global Collaboration",
-          description:
-            "We reject traditional '9-to-5' or punch-in systems, no need for commuting, work from home allows you to work efficiently in a comfortable environment, team members are located around the world, communicating and collaborating efficiently through advanced online collaboration platforms, breaking geographical limitations.",
+          description: "We reject traditional '9-to-5' or punch-in systems, no need for commuting, work from home allows you to work efficiently in a comfortable environment, team members are located around the world, communicating and collaborating efficiently through advanced online collaboration platforms, breaking geographical limitations.",
         },
-        {
-          title: "Equity Incentives",
-          description:
-            "All employees are given shares while being paid. Your shares are proportional to your contribution.",
-        },
-        {
-          title: "Result-Oriented",
-          description:
-            "Focus on results, achieve goals, give high rewards. For example: if you complete 4 months of goals in 2 months, you still get the full reward.",
-        },
+        { title: "Equity Incentives", description: "All employees are given shares while being paid. Your shares are proportional to your contribution." },
+        { title: "Result-Oriented", description: "Focus on results, achieve goals, give high rewards. For example: if you complete 4 months of goals in 2 months, you still get the full reward." },
       ],
     },
     positions: {
       title: "Open Positions",
       items: [
-        {
-          title: "Robot Hardware Engineer",
-          description: "Responsible for robot hardware design, assembly, and testing.",
-        },
-        {
-          title: "Embodied Intelligence Software Engineer",
-          description: "Responsible for robot AI algorithm and intelligent interaction system development.",
-        },
+        { title: "Robot Hardware Engineer", description: "Responsible for robot hardware design, assembly, and testing." },
+        { title: "Embodied Intelligence Software Engineer", description: "Responsible for robot AI algorithm and intelligent interaction system development." },
       ],
     },
   },
@@ -330,21 +217,8 @@ const enDict = {
     overseasAddress: "Overseas Company Address: Singapore",
     chinaAddress: "China Company Address: Hangzhou",
     form: {
-      name: "Name",
-      namePlaceholder: "Please enter your name",
-      email: "Email",
-      emailPlaceholder: "Please enter your email",
-      position: "Position Applied",
-      positionPlaceholder: "Please select a position",
-      positions: {
-        hardware: "Robot Hardware Engineer",
-        software: "Embodied Intelligence Software Engineer",
-        other: "Other Position",
-      },
-      introduction: "Personal Introduction",
-      introductionPlaceholder: "Please briefly introduce your skills and experience",
-      submit: "Submit Application",
-    },
+      introductionPlaceholder: "Please briefly introduce your skills and experience"
+    }
   },
   footer: {
     copyright: "© 2024 Quadra Robot. All rights reserved.",
@@ -361,15 +235,12 @@ export default function HomePage() {
   const [lang, setLang] = useState("zh")
   const [dict, setDict] = useState(zhDict)
 
-  // 切换语言
   const toggleLanguage = (newLang) => {
     setLang(newLang)
     setDict(newLang === "zh" ? zhDict : enDict)
-    // 保存语言偏好到本地存储
     localStorage.setItem("preferredLanguage", newLang)
   }
 
-  // 从本地存储加载语言偏好
   useEffect(() => {
     const savedLang = localStorage.getItem("preferredLanguage")
     if (savedLang) {
@@ -390,25 +261,16 @@ export default function HomePage() {
               <span className="inline-block font-bold">Quadra Robot</span>
             </Link>
             <nav className="hidden md:flex gap-6">
-              <Link
-                href="#vision"
-                className="flex items-center text-lg font-medium transition-colors hover:text-primary"
-              >
+              <Link href="#vision" className="flex items-center text-lg font-medium transition-colors hover:text-primary">
                 {dict.nav.vision}
               </Link>
-              <Link
-                href="#design"
-                className="flex items-center text-lg font-medium transition-colors hover:text-primary"
-              >
+              <Link href="#design" className="flex items-center text-lg font-medium transition-colors hover:text-primary">
                 {dict.nav.design}
               </Link>
               <Link href="#team" className="flex items-center text-lg font-medium transition-colors hover:text-primary">
                 {dict.nav.team}
               </Link>
-              <Link
-                href="#contact"
-                className="flex items-center text-lg font-medium transition-colors hover:text-primary"
-              >
+              <Link href="#contact" className="flex items-center text-lg font-medium transition-colors hover:text-primary">
                 {dict.nav.contact}
               </Link>
             </nav>
@@ -437,56 +299,26 @@ export default function HomePage() {
           </div>
         </div>
       </header>
+
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    {dict.hero.title.split("\n").map((line, i) => (
-                      <React.Fragment key={i}>
-                        {line}
-                        {i < dict.hero.title.split("\n").length - 1 && <br />}
-                      </React.Fragment>
-                    ))}
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">{dict.hero.subtitle}</p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    href="#vision"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                  >
-                    {dict.cta.learnVision}
-                  </Link>
-                  <Link
-                    href="#design"
-                    className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                  >
-                    {dict.cta.productDesign}
-                    <ChevronRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </div>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl whitespace-pre-line">
+                  {dict.hero.title}
+                </h1>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                  {dict.hero.subtitle}
+                </p>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="relative w-[400px] h-[400px] bg-muted rounded-lg overflow-hidden">
-                  <div className="absolute bottom-0 left-0 w-full h-3/4 bg-primary/10 rounded-lg">
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-2/3 bg-primary/20 rounded-lg">
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-full bg-primary/30 rounded-lg"></div>
-                      <div className="absolute top-0 left-1/4 -translate-x-1/2 w-[10px] h-1/2 bg-primary/40 rounded-full"></div>
-                      <div className="absolute top-0 right-1/4 -translate-x-1/2 w-[10px] h-1/2 bg-primary/40 rounded-full"></div>
-                    </div>
-                    <div className="absolute bottom-0 left-0 w-full h-1/4 flex justify-center">
-                      <div className="w-3/4 h-full bg-primary/30 rounded-lg flex justify-around items-center">
-                        <div className="w-[40px] h-[40px] bg-primary/50 rounded-full"></div>
-                        <div className="w-[40px] h-[40px] bg-primary/50 rounded-full"></div>
-                        <div className="w-[40px] h-[40px] bg-primary/50 rounded-full"></div>
-                        <div className="w-[40px] h-[40px] bg-primary/50 rounded-full"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="space-x-4">
+                <Link href="#vision" className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md">
+                  {dict.cta.learnVision}
+                </Link>
+                <Link href="#design" className="border border-input hover:bg-accent hover:text-accent-foreground px-4 py-2 rounded-md">
+                  {dict.cta.productDesign}
+                </Link>
               </div>
             </div>
           </div>
@@ -499,26 +331,36 @@ export default function HomePage() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   {dict.vision.title}
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{dict.vision.subtitle}</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  {dict.vision.subtitle}
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   {dict.vision.description}
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2">
-              <div className="flex flex-col space-y-4">
-                <h3 className="text-2xl font-bold">{dict.vision.philosophy.title}</h3>
+
+            {/* 我们的理念 */}
+            <div className="mx-auto max-w-5xl py-12">
+              <h3 className="text-2xl font-bold mb-6">{dict.vision.philosophy.title}</h3>
+              <div className="space-y-4">
                 <p className="text-muted-foreground">{dict.vision.philosophy.content1}</p>
                 <p className="text-muted-foreground">{dict.vision.philosophy.content2}</p>
               </div>
-              <div className="flex flex-col space-y-4">
-                <h3 className="text-2xl font-bold">{dict.vision.mission.title}</h3>
+            </div>
+
+            {/* 我们的使命 */}
+            <div className="mx-auto max-w-5xl py-12">
+              <h3 className="text-2xl font-bold mb-6">{dict.vision.mission.title}</h3>
+              <div className="space-y-4">
                 <p className="text-muted-foreground">{dict.vision.mission.content1}</p>
                 <p className="text-muted-foreground">{dict.vision.mission.content2}</p>
               </div>
             </div>
-            <div className="mx-auto max-w-5xl py-6">
-              <h3 className="text-2xl font-bold mb-4">{dict.vision.name.title}</h3>
+
+            {/* 名字的寓意 */}
+            <div className="mx-auto max-w-5xl py-12">
+              <h3 className="text-2xl font-bold mb-6">{dict.vision.name.title}</h3>
               <p className="text-muted-foreground">{dict.vision.name.content}</p>
             </div>
           </div>
@@ -526,48 +368,44 @@ export default function HomePage() {
 
         <section id="design" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   {dict.design.title}
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{dict.design.subtitle}</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  {dict.design.subtitle}
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   {dict.design.description}
                 </p>
               </div>
             </div>
 
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col space-y-4">
-                <h3 className="text-2xl font-bold">{dict.design.analysis.title}</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  {dict.design.analysis.items.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Shield className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>
-                        <strong>{item.title}：</strong>
-                        {item.description}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+            {/* 需求分析部分 */}
+            <div className="mx-auto max-w-5xl py-12">
+              <h3 className="text-2xl font-bold mb-6">{dict.design.analysis.title}</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {dict.design.analysis.items.map((item, index) => (
+                  <div key={index} className="p-4 border rounded-lg">
+                    <h4 className="font-bold mb-2">{item.title}</h4>
+                    <p className="text-muted-foreground">{item.description}</p>
+                  </div>
+                ))}
               </div>
+            </div>
 
-              <div className="flex flex-col space-y-4">
-                <h3 className="text-2xl font-bold">{dict.design.solution.title}</h3>
-                <p className="text-muted-foreground">{dict.design.solution.description}</p>
-                <ul className="space-y-2 text-muted-foreground">
-                  {dict.design.solution.items.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Shield className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>
-                        <strong>{item.title}：</strong>
-                        {item.description}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+            {/* 设计方案部分 */}
+            <div className="mx-auto max-w-5xl py-12">
+              <h3 className="text-2xl font-bold mb-6">{dict.design.solution.title}</h3>
+              <p className="mb-6 text-muted-foreground">{dict.design.solution.description}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {dict.design.solution.items.map((item, index) => (
+                  <div key={index} className="p-4 border rounded-lg">
+                    <h4 className="font-bold mb-2">{item.title}</h4>
+                    <p className="text-muted-foreground">{item.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -580,37 +418,45 @@ export default function HomePage() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   {dict.team.title}
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{dict.team.subtitle}</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  {dict.team.subtitle}
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   {dict.team.description}
                 </p>
               </div>
             </div>
 
+            {/* 工作方式 */}
             <div className="mx-auto max-w-5xl py-12">
               <h3 className="text-2xl font-bold mb-6 text-center">{dict.team.workStyle.title}</h3>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {dict.team.workStyle.items.map((item, index) => (
-                  <div key={index} className="rounded-lg border p-6 flex flex-col items-center text-center">
-                    {index === 0 && <Globe className="h-12 w-12 text-primary mb-4" />}
-                    {index === 1 && <Briefcase className="h-12 w-12 text-primary mb-4" />}
-                    {index === 2 && <Award className="h-12 w-12 text-primary mb-4" />}
-                    <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                  <div key={index} className="p-6 border rounded-lg bg-background">
+                    <div className="mb-4">
+                      {index === 0 && <Globe className="h-8 w-8 text-primary" />}
+                      {index === 1 && <Award className="h-8 w-8 text-primary" />}
+                      {index === 2 && <Briefcase className="h-8 w-8 text-primary" />}
+                    </div>
+                    <h4 className="font-bold mb-2">{item.title}</h4>
                     <p className="text-muted-foreground">{item.description}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mx-auto max-w-5xl py-6">
+            {/* 招募职位 */}
+            <div className="mx-auto max-w-5xl py-12">
               <h3 className="text-2xl font-bold mb-6 text-center">{dict.team.positions.title}</h3>
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {dict.team.positions.items.map((item, index) => (
-                  <div key={index} className="rounded-lg border p-6 flex flex-col items-center text-center">
-                    {index === 0 && <Wrench className="h-12 w-12 text-primary mb-4" />}
-                    {index === 1 && <Code className="h-12 w-12 text-primary mb-4" />}
-                    <h4 className="text-xl font-bold">{item.title}</h4>
-                    <p className="text-muted-foreground mt-2">{item.description}</p>
+                  <div key={index} className="p-6 border rounded-lg bg-background">
+                    <div className="mb-4">
+                      {index === 0 && <Wrench className="h-8 w-8 text-primary" />}
+                      {index === 1 && <Code className="h-8 w-8 text-primary" />}
+                    </div>
+                    <h4 className="font-bold mb-2">{item.title}</h4>
+                    <p className="text-muted-foreground">{item.description}</p>
                   </div>
                 ))}
               </div>
@@ -625,98 +471,56 @@ export default function HomePage() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   {dict.contact.title}
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{dict.contact.subtitle}</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  {dict.contact.subtitle}
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   {dict.contact.description}
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2">
-              <div className="flex flex-col space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-6 w-6 text-primary" />
-                  <span>{dict.contact.email}</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-6 w-6 text-primary" />
-                  <span>{dict.contact.overseasAddress}</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-6 w-6 text-primary" />
-                  <span>{dict.contact.chinaAddress}</span>
-                </div>
-              </div>
-              <div className="rounded-lg border bg-background p-6 shadow-sm">
-                <form className="space-y-4">
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      {dict.contact.form.name}
-                    </label>
-                    <input
-                      id="name"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder={dict.contact.form.namePlaceholder}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      {dict.contact.form.email}
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder={dict.contact.form.emailPlaceholder}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="position"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      {dict.contact.form.position}
-                    </label>
-                    <select
-                      id="position"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    >
-                      <option value="">{dict.contact.form.positionPlaceholder}</option>
-                      <option value="hardware">{dict.contact.form.positions.hardware}</option>
-                      <option value="software">{dict.contact.form.positions.software}</option>
-                      <option value="other">{dict.contact.form.positions.other}</option>
-                    </select>
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="message"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      {dict.contact.form.introduction}
-                    </label>
-                    <textarea
-                      id="message"
-                      className="flex min-h-[100px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder={dict.contact.form.introductionPlaceholder}
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+
+            <div className="mx-auto max-w-5xl py-12">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                {/* 邮箱联系方式 */}
+                <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <Mail className="h-12 w-12 text-primary mb-4" />
+                  <h3 className="text-xl font-bold mb-2">Email</h3>
+                  <a 
+                    href={`mailto:${dict.contact.email}`}
+                    className="text-primary hover:underline break-all"
                   >
-                    {dict.contact.form.submit}
-                  </button>
-                </form>
+                    {dict.contact.email}
+                  </a>
+                </div>
+
+                {/* 海外地址 */}
+                <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <Globe className="h-12 w-12 text-primary mb-4" />
+                  <h3 className="text-xl font-bold mb-2">
+                    {lang === "zh" ? "海外总部" : "Global HQ"}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {dict.contact.overseasAddress}
+                  </p>
+                </div>
+
+                {/* 中国地址 */}
+                <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <MapPin className="h-12 w-12 text-primary mb-4" />
+                  <h3 className="text-xl font-bold mb-2">
+                    {lang === "zh" ? "中国分部" : "China Office"}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {dict.contact.chinaAddress}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
+
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
@@ -735,4 +539,3 @@ export default function HomePage() {
     </div>
   )
 }
-

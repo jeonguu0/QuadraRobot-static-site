@@ -1,6 +1,6 @@
-let userConfig = undefined
+let userConfig = undefined;
 try {
-  userConfig = await import('./v0-user-next.config')
+  userConfig = await import('./v0-user-next.config');
 } catch (e) {
   // ignore error
 }
@@ -14,25 +14,21 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // 必须设置为 true, 因为静态导出不支持图片优化
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  i18n: {
-    locales: ['en', 'zh'],
-    defaultLocale: 'en',
-    localeDetection: false,
-  },
-}
+  output: 'export', // 启用静态导出模式
+};
 
-mergeConfig(nextConfig, userConfig)
+mergeConfig(nextConfig, userConfig);
 
 function mergeConfig(nextConfig, userConfig) {
   if (!userConfig) {
-    return
+    return;
   }
 
   for (const key in userConfig) {
@@ -43,11 +39,11 @@ function mergeConfig(nextConfig, userConfig) {
       nextConfig[key] = {
         ...nextConfig[key],
         ...userConfig[key],
-      }
+      };
     } else {
-      nextConfig[key] = userConfig[key]
+      nextConfig[key] = userConfig[key];
     }
   }
 }
 
-export default nextConfig
+export default nextConfig;
